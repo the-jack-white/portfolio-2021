@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 import './index.css';
 
@@ -8,7 +9,7 @@ class Navigation extends Component {
         return (
             <Navbar className='main-navigation' expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                    <Navbar.Brand as={Link} to='/'>J.W.</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -16,11 +17,11 @@ class Navigation extends Component {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">About</Nav.Link>
-                            <Nav.Link href="#action2">Skills</Nav.Link>
+                            <Nav.Link as={Link} to='/about'>About</Nav.Link>
+                            <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
                             <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">LEM Verify</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Biz2Click</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/projects:lemverify'>LEM Verify</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/projects:biz2click'>Biz2Click</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action5">
                                     Something else here

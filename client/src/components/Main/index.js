@@ -10,17 +10,17 @@ import './index.css';
 class Main extends Component {
     render() {
         return (
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col className='col-items'>
                         <Navigation />
                     </Col>
                 </Row>
-                <Row style={{height: '80vh'}}>
+                <Row style={{height: '90vh'}}>
                     <Col className='col-items' xs={2} md={1}>
                         <Second />
                     </Col>
-                    <Col className='col-items' xs={16} md={11}>
+                    <Col className='col-items main-body' xs={16} md={11}>
                         <Body />
                     </Col>
                 </Row>
