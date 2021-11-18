@@ -33,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10% 0 0 0;
 }
 
 .text-container {
@@ -41,6 +42,6 @@
 }
 
 .skill-col {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 10px;
 }

@@ -2,12 +2,3 @@
     height: 100%;
     width: 100%;
 }
-
-.col-items {
-    border: 1px solid white;
-}
-
-.col-items:hover {
-    border: 1px solid #CED4DA;
-    border-radius: 5px;
-}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 import './index.css';
@@ -20,23 +20,14 @@ class Navigation extends Component {
                             <Nav.Link as={Link} to='/about'>About</Nav.Link>
                             <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
                             <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                                <NavDropdown.Item as={Link} to='/projects:lemverify'>LEM Verify</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to='/projects:biz2click'>Biz2Click</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
-                                </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/projects/lemverify'>LEM Verify</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/projects/biz2click'>Biz2Click</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        <Form className="d-flex">
-                            <FormControl
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
+                        <Nav>
+                            <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+                            <Nav.Link as={Link} to='/contact'>Blog</Nav.Link>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
