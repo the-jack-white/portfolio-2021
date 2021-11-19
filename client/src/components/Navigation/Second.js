@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
+import CONFIG from '../../lib/config';
+
 import './index.css'
 
 class Second extends Component {
@@ -23,7 +25,7 @@ class Second extends Component {
                         overlay={(props) => this.renderTooltip(props, 'LinkedIn')}
                     >
                         <a href='https://www.linkedin.com/in/the-jack-white' rel="noreferrer" target="_blank" >
-                            <Image src="/images/linkedin.png" width='35px' thumbnail />
+                            <Image src="/myportfolio/images/linkedin.png" width='35px' thumbnail />
                         </a>
                     </OverlayTrigger>
                 </div>
@@ -34,7 +36,7 @@ class Second extends Component {
                         overlay={(props) => this.renderTooltip(props, 'Github')}
                     >
                         <a href='https://github.com/the-jack-white' rel="noreferrer" target="_blank" >
-                            <Image src="/images/github-logo.svg" width='35px' thumbnail />
+                            <Image src="/myportfolio/images/github-logo.svg" width='35px' thumbnail />
                         </a>
                     </OverlayTrigger>
                 </div>
@@ -44,8 +46,8 @@ class Second extends Component {
                         delay={{ show: 250, hide: 400 }}
                         overlay={(props) => this.renderTooltip(props, 'Download CV')}
                     >
-                        <a href='/documents/JackWhiteCV_Nov2021.pdf' rel="noreferrer" target="_blank" download >
-                            <Image src="/images/download.png" width='35px' thumbnail />
+                        <a href={CONFIG.repo + '/documents/JackWhiteCV_Nov2021.pdf'} rel="noreferrer" target="_blank" download >
+                            <Image src={CONFIG.repo + "/images/download.png"} width='35px' thumbnail />
                         </a>
                     </OverlayTrigger>
                 </div>
@@ -54,4 +56,4 @@ class Second extends Component {
     }
 }
 
-export default Second
+export default Second;

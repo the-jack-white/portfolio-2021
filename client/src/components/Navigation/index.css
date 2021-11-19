@@ -31,3 +31,11 @@
         margin: 0 10px;
     }
 }
+
+.navbar-brand {
+    font-size: 27px !important;
+}
+
+.nav-link {
+    font-size: 19px;
+}

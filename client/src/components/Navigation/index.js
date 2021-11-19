@@ -9,7 +9,7 @@ class Navigation extends Component {
         return (
             <Navbar className='main-navigation' expand="lg">
                 <Container fluid>
-                    <Navbar.Brand as={Link} to='/'>J.W.</Navbar.Brand>
+                    <Navbar.Brand as={Link} to='/myportfolio'>Jack White</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -17,16 +17,15 @@ class Navigation extends Component {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link as={Link} to='/about'>About</Nav.Link>
-                            <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
-                            <NavDropdown title="Projects" id="navbarScrollingDropdown">
-                                <NavDropdown.Item as={Link} to='/projects/lemverify'>LEM Verify</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to='/projects/biz2click'>Biz2Click</NavDropdown.Item>
-                            </NavDropdown>
+                            
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
-                            <Nav.Link as={Link} to='/contact'>Blog</Nav.Link>
+                            <Nav.Link as={Link} to='/myportfolio/about'>About</Nav.Link>
+                            <Nav.Link as={Link} to='/myportfolio/skills'>Skills</Nav.Link>
+                            <NavDropdown title="Projects" id="navbarScrollingDropdown">
+                                <NavDropdown.Item as={Link} to='/myportfolio/projects/lemverify'>LEM Verify</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to='/myportfolio/projects/biz2click'>Biz2Click</NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

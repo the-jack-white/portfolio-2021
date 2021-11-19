@@ -23,7 +23,7 @@ class Skills extends Component {
                         </Text>
                         <ListGroup variant="flush">
                             { skillList.soft.map((skill, index) => 
-                                <ListGroup.Item key={index}>
+                                <ListGroup.Item key={index} style={{backgroundColor: 'rgba(255, 255, 255, 0)'}}>
                                     <Skill 
                                         Title={skill.name}
                                         Value={skill.value}
@@ -44,7 +44,7 @@ class Skills extends Component {
                         </Text>
                         <ListGroup variant="flush">
                             { skillList.hard.map((skill, index) => 
-                                <ListGroup.Item key={index}>
+                                <ListGroup.Item key={index} style={{backgroundColor: 'rgba(255, 255, 255, 0)'}}>
                                     <Skill 
                                         Title={skill.name}
                                         Value={skill.value}
@@ -65,7 +65,7 @@ class Skills extends Component {
                         </Text>
                         <ListGroup variant="flush">
                             { skillList.other.map((skill, index) => 
-                                <ListGroup.Item key={index}>
+                                <ListGroup.Item key={index} style={{backgroundColor: 'rgba(255, 255, 255, 0)'}}>
                                     <Text
                                         Size='20px'
                                         Align='center'

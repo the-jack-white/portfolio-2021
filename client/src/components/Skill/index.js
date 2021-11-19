@@ -4,11 +4,29 @@ import { ProgressBar } from 'react-bootstrap';
 import './index.css';
 
 class Skill extends Component {
+
+    state = {
+        currentValue: 0
+    }
+
+    startProgress = () => {
+        for ( let i = 0; i <= this.props.Value; i ++ ) {
+            this.setState({currentValue: i})
+        }
+    }
+
+    componentDidMount = () => {
+        setTimeout(this.startProgress, 70)
+    }
+
     render() {
+
+        const { currentValue } = this.state;
+
         return (
             <div>
                 <p className='skill-title'>{this.props.Title}</p>
-                <ProgressBar variant="success" now={this.props.Value} style={{height: '5px'}} />
+                <ProgressBar variant="success" now={currentValue} style={{height: '4px'}} />
                 <p className='skill-status'>{this.props.Status}</p>
             </div>
         )

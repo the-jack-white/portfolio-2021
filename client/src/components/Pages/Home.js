@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Col, Container, Row, Image, Spinner } from 'react-bootstrap';
 
+import CONFIG from '../../lib/config';
+
 import './index.css';
 
 class Home extends Component {
@@ -23,7 +25,7 @@ class Home extends Component {
         let avatarImage;
 
         if ( componentMounted ) {
-            avatarImage = <Image src="/images/linkedin_image.jpg" alt="Profile" height="300px"  roundedCircle />
+            avatarImage = <Image src={CONFIG.repo + '/images/linkedin_image.jpg'} alt="Profile" height="300px"  roundedCircle />
         } else {
             avatarImage = <Spinner animation="border" />
         }
@@ -41,7 +43,7 @@ class Home extends Component {
                     <Col className='centered'>
                         <div style={{textAlign:'center'}}>
                             <h2>Jack White</h2>
-                            <h4>Software Engineer</h4>
+                            <h4>Software Engineer - Web Enthusiast</h4>
                         </div>
                     </Col>
                 </Row>
@@ -49,10 +51,14 @@ class Home extends Component {
                     <Col className='centered'>
                         <div>
                             <div className='btn-container'>
-                                <Button variant='outline-success'>Portfolio - 2019</Button>
+                                <a href={CONFIG.repo + '/documents/JackWhiteCV_Nov2021.pdf'} rel="noreferrer" target="_blank" download>
+                                    <Button variant='outline-success'>Download CV</Button>
+                                </a>
                             </div>
                             <div className='btn-container'>
-                                <Button variant='outline-success'>Portfolio - 2018</Button>
+                                <a href='mailto:white123jack@gmail.com' rel="noreferrer" target="_blank">
+                                    <Button variant='outline-success'>Contact Me</Button>
+                                </a>
                             </div>
                         </div>
                     </Col>
