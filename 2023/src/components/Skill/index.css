@@ -1,0 +1,11 @@
+.skill-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.skill-status {
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,10 @@
+import projects from "../../../lib/project-list";
+import Project from "../../Project/Project";
+
+import "../index.css";
+
+const Biz2click = () => {
+  return <Project projectText="2017 - 2019" project={projects.biz2click} />;
+};
+
+export default Biz2click;

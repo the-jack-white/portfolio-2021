@@ -1,0 +1,48 @@
+.home-container {
+    padding: 100px 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sub-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-avatar-large {
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.linkedin-picture {
+    z-index: -1;
+}
+
+.btn-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 0 0;
+}
+
+.text-container {
+    width: 50%;
+    height: 100%;
+}
+
+.biz2click-header {
+    margin: 0 0 -15px 0;
+}

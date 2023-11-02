@@ -1,0 +1,4 @@
+.selected-element:hover {
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+}

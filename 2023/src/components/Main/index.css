@@ -1,0 +1,19 @@
+.main-body {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .particle-container {
+        position: relative;
+        left: 2vw;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .particle-container {
+        display: none;
+    }
+}

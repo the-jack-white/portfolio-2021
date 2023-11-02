@@ -1,0 +1,41 @@
+.second-nav-item {
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.button-tooltip p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: 200;
+}
+
+.other-skills-items {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 480px) {
+    .second-nav {
+        position: absolute;
+        top: 75.7vh;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .second-nav {
+        display: flex;
+        justify-content: center;
+        /* position: relative; */
+    }
+    .second-nav-item {
+        margin: 0 10px;
+    }
+}
+
+.navbar-brand {
+    font-size: 27px !important;
+}
+
+.nav-link {
+    font-size: 19px;
+}
