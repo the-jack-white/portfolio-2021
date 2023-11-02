@@ -5,6 +5,7 @@ import About from "../Pages/About";
 import Skills from "../Pages/Skills";
 import Lemverify from "../Pages/Projects/Lemverify";
 import Biz2click from "../Pages/Projects/Biz2click";
+import ApplyDigital from "../Pages/Projects/ApplyDigital";
 
 import "./index.css";
 
@@ -15,6 +16,7 @@ const Body = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/projects/applydigital" element={<ApplyDigital />} />
         <Route path="/projects/lemverify" element={<Lemverify />} />
         <Route path="/projects/biz2click" element={<Biz2click />} />
       </Routes>

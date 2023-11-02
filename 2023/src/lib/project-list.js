@@ -1,4 +1,18 @@
 const projects = {
+  applydigital: [
+    {
+      name: "Project Chamberlain",
+      description:
+        "This was a web app for an enterprise client in the UK that specializes in creating miniature figurines that can be painted and use to play in a dedicated board game  (Cannot reveal client’s name). The purpose of the web app was for users to track these board games being played, take score and have a community page to show the results of other games and who is playing. This was my first project with E2X (before Apply Digital acquisition) where I was tasked with various duties, i.e: 1. Create Serverless functions (E.g. for a profanity/IP filter). 2. Create numerous ReactJS components, writing unit tests and creating Storybook stories to view and interact with each component.",
+      status: false,
+    },
+    {
+      name: "Project Lazarus",
+      description:
+        "An eCommerce website for the same client as Project Chamberlain, to completely recreate their website (www.warhammer.com), for users to purchase their products on a global scale. The business requirements was extremely complex, which required careful planning and very strict development standards. We used Contentful for the CMS, Commercetools as the commerce platform, NextJS as the overall framework and a custom ReactJS UI library that is imported from NPM. There was of course a lot of other tools and services we used, but as a Senior Front End Developer, this was where most of my responsibilities remained. My responsibilities ranged from: 1. Creating various UI Components using TailwindCSS, making sure everything is fully unit tested using React Testing Library, as we were strict to maintain a coverage of nothing lower than 96%. For each component, a Storybook story had to be created which was deployed to Chromatic. 2. Using the created UI Components in the NextJS website, enrichers are used to map the content/product data coming in from Contentful or Commercetools and pass it into the UI components. 3. Making sure Cypress tests are created for each Acceptance Criteria of a ticket 4. Making sure that all the code is according to a professional standard, e.g. that specific linting rules apply, making sure no comments are used without ticket numbers, no use of console logging and all functionality is well tested and documented. This project had a team size of around 20 - 30 people , which included 4 QA developers, 7 Back End and 8 Front End developers, the rest being Business Analysts, Project Managers and Project Owners.",
+      status: false,
+    },
+  ],
   lemverify: [
     {
       name: "Templator Project",

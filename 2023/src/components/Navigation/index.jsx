@@ -25,6 +25,9 @@ const Navigation = () => {
               Skills
             </Nav.Link>
             <NavDropdown title="Projects" id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="/projects/applydigital">
+                Apply Digital
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/projects/lemverify">
                 LEM Verify
               </NavDropdown.Item>

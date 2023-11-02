@@ -8,9 +8,11 @@ import "./index.css";
 
 const Skills = () => {
   return (
-    <Container style={{ height: "100%" }}>
-      <Row style={{ height: "100%" }}>
-        <Col className="skill-col" style={{ borderRight: "1px solid #CED4DA" }}>
+    <Container
+      style={{ height: "100%", display: "flex", justifyContent: "center" }}
+    >
+      <Row style={{ height: "100%", width: "80%" }}>
+        <Col className="skill-col">
           <Text Size="25px" Align="center" Weight="100" Custom="skills-header">
             Soft Skills
           </Text>
@@ -29,7 +31,7 @@ const Skills = () => {
             ))}
           </ListGroup>
         </Col>
-        <Col className="skill-col" style={{ borderRight: "1px solid #CED4DA" }}>
+        <Col className="skill-col">
           <Text Size="25px" Align="center" Weight="100" Custom="skills-header">
             Hard Skills
           </Text>
@@ -44,28 +46,6 @@ const Skills = () => {
                   Value={skill.value}
                   Status={skill.status}
                 />
-              </ListGroup.Item>
-            ))}
-          </ListGroup>
-        </Col>
-        <Col className="skill-col">
-          <Text Size="25px" Align="center" Weight="100" Custom="skills-header">
-            Other Skills
-          </Text>
-          <ListGroup variant="flush">
-            {skillList.other.map((skill, index) => (
-              <ListGroup.Item
-                key={index}
-                style={{ backgroundColor: "rgba(255, 255, 255, 0)" }}
-              >
-                <Text
-                  Size="20px"
-                  Align="center"
-                  Weight="200"
-                  Custom="other-skills-items"
-                >
-                  {skill}
-                </Text>
               </ListGroup.Item>
             ))}
           </ListGroup>
